@@ -1,32 +1,13 @@
-import React, { useState, lazy, Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = lazy(() => import('./App'));
+const App = React.lazy(() => import('./App'));
 
 ReactDOM.render(
-  <Suspense fallback={<div>Loading...</div>}>
+  <React.Suspense fallback={<div>Loading...</div>}>
     <App />
-  </Suspense>,
+  </React.Suspense>,
   document.getElementById('root')
 );
-
-const ChecboxComponent: React.FC = () => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    const handleCheckboxChange = () => {
-        setIsChecked(!isChecked);
-    };
-    return (
-        <div>
-            <input
-            type="checkbox"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-            />
-            <label>Checkbox label</label>
-        </div>
-    );
-};
-
-export default ChecboxComponent;
