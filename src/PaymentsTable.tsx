@@ -31,7 +31,7 @@ export const USER_TABLE: Array<User> = [
     {id: 3, priorRefund: false, isBanned: true, name: 'clyde'},
 ]
 
-export const PAYMENTS_TABLE: Array<ChargeItem> = [
+export const PAYMENTS_TABLE: Array<ChargeItem> = [ // use as initial value
     {id: 1, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
     {id: 2, userId: 1, status: 'Failed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('06/07/2024')},
     {id: 3, userId: 1, status: 'Refunded', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2023')},
@@ -39,6 +39,16 @@ export const PAYMENTS_TABLE: Array<ChargeItem> = [
     {id: 5, userId: 1, status: 'Pending', paymentType: 'Stripe', productType: 'Gift - Nitro Yearly', billedOn: new Date('07/07/2023')},
     {id: 6, userId: 2, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
     {id: 7, userId: 3, status: 'Reversed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 8, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 9, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 10, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 11, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 12, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 13, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 14, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 15, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+    {id: 16, userId: 1, status: 'Completed', paymentType: 'Stripe', productType: 'Nitro Monthly', billedOn: new Date('07/07/2024')},
+
 ]
 
 

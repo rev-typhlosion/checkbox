@@ -5,7 +5,7 @@ interface CheckboxProps {
     setIsChecked: (newValue: boolean) => void;
 }
 
-const ChecboxComponent: React.FC<CheckboxProps> = ({ isChecked, setIsChecked }) => {
+const CheckboxComponent: React.FC<CheckboxProps> = ({ isChecked, setIsChecked }) => {
 
 
     const handleCheckboxChange = () => {
@@ -24,7 +24,7 @@ const ChecboxComponent: React.FC<CheckboxProps> = ({ isChecked, setIsChecked }) 
     );
 };
 
-export default ChecboxComponent;
+export default CheckboxComponent;
 
 /*
 import React from 'react';

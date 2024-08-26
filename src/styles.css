@@ -3,11 +3,13 @@ body {
   }
   
   h1 {
-    color: #333;
+    color: rgb(51, 51, 51);
   }
 
-  table, td, th {
-    border: 1px solid black;
+
+  table, td {
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid rgb(219, 219, 219) !important;
   }
 
   table {
@@ -15,12 +17,75 @@ body {
     width: 100%;
   }
 
-  td {
-    text-align: center;
+  th {
+    border-top: 1px;
+  }
+
+  td, th {
+    text-align: center !important;
   }
 
   .checkbox {
     justify-content: center;
   }
+
+  .paymentHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    align-items: center;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5em 1em;
+      font-size: clamp(12px, 2vw, 16px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+      background-color: rgb(88, 101, 242);
+      border: none;
+  }
+
+    h4 {
+      color:rgb(46, 46, 92);
+      margin: 10px;
+    }
+  }
+
+  tbody tr:hover {background-color: rgb(247, 247, 255);}
+
+  input[type="checkbox"]{
+    accent-color: rgb(88,101,242);
+  }
+
+  .modal-title {
+    color: rgb(98, 98, 98) !important;
+  }
+
+  .modal-p {
+    color: grey;
+  }
+
+  .modal-table-container {
+    max-height: 200px;
+    overflow-y: auto;
+  }
   
-  tr:hover {background-color: aliceblue;}
+  .modal-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+.modal-table thead th {
+  background-color:#ffffff;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+
+.default-option{
+  color: grey !important;
+}

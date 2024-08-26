@@ -9,12 +9,21 @@ interface PaymentProps {
     setIsChecked: (newValue: boolean) => void;
 }
 
-const TableRowComponent: React.FC<PaymentProps> = ({ payment, isChecked, setIsChecked }) => {
+const TableRowComponent = ({ payment, isChecked, setIsChecked }: PaymentProps) => {
+    const shouldRenderCheckbox = payment.status === "Completed" && payment.paymentType !== "Apple";
+
     return (
         <tr>
             <td className="checkbox">
-                <CheckboxComponent isChecked={isChecked} setIsChecked={setIsChecked}/>
+                {shouldRenderCheckbox ? (
+                    <CheckboxComponent 
+                        isChecked={isChecked} 
+                        setIsChecked={setIsChecked} 
+                    />
+                ) : null
+            }
             </td>
+            <td>{payment.billedOn.toLocaleDateString()} {payment.billedOn.toLocaleTimeString()}</td>
             <td>{payment.id}</td>
             <td>{payment.userId}</td>
             <td>{payment.status}</td>
